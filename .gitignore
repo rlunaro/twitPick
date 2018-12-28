@@ -1,3 +1,13 @@
+
+# Project custom
+/twitPick/Debug
+/twitPickTest/Debug
+credentials.txt
+config.cfg
+cookies.txt
+
+
+
 # Prerequisites
 *.d
 

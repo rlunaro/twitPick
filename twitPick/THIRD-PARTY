@@ -1,0 +1,12 @@
+
+
+ * Base64 implementation taken from René Nyffenegger
+ 
+ * Uses Catch Org's catch.hpp (https://github.com/catchorg/Catch2) for testing
+ 
+ * Uses Niels Lohmann's json parser (https://github.com/nlohmann/json) for parsing of json data
+ 
+ * Uses Mark A Lindner's libconfig (https://github.com/hyperrealm/libconfig) for store/retrieve config data
+ 
+ * Uses libcurl(https://curl.haxx.se/libcurl/) for access to twitter REST API
+ 
