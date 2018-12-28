@@ -9,8 +9,7 @@ else
 fi
 
 ./Debug/twitPick \
-         --consumer-key "hiP7mgIpYZrEUFksnn7iWzzP0" \
-         --consumer-secret "nQtaLrrNXCSuZvp9IYhaN7PujLu9gQqUIA5rc7ruzaVGgrOKkn" \
+         --credentials-file "credentials.txt" \
          --cookies-file "cookies2.txt" \
          --output-format tabular \
          --query "$param"

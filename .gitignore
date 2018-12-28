@@ -1,7 +1,9 @@
 
 # Project custom
 /twitPick/Debug
+/twitPick/Release
 /twitPickTest/Debug
+/twitPickTest/Release
 credentials.txt
 config.cfg
 cookies.txt
