@@ -35,7 +35,8 @@ TwitPickSearchParam::TwitPickSearchParam()
   until(""),
   sinceId(""),
   maxId(""),
-  includeEntities(false)
+  includeEntities(false),
+  tweetMode("extended")
 {
 
 }
@@ -51,7 +52,8 @@ TwitPickSearchParam::TwitPickSearchParam( const std::string& query )
   until(""),
   sinceId(""),
   maxId(""),
-  includeEntities(false)
+  includeEntities(false),
+  tweetMode("extended")
 {
 
 }

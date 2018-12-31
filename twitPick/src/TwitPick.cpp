@@ -143,6 +143,7 @@ void TwitPick::addQueryParameters( TwitPickSearchParam params )
 		curlWrapper.addGetParameter( HttpParameter("include_entities", "true" ) );
 	else
 		curlWrapper.addGetParameter( HttpParameter("include_entities", "false" ) );
+	curlWrapper.addGetParameter( HttpParameter("tweet_mode", params.tweetMode ) );
 }
 
 void TwitPick::setConsumerKey( const std::string& consumerKey )

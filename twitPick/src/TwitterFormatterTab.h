@@ -26,6 +26,7 @@
 #ifndef TWITTERFORMATTERTAB_H_
 #define TWITTERFORMATTERTAB_H_
 
+#include <string>
 #include <iostream>
 
 #include <TwitterParser.h>
@@ -34,6 +35,8 @@
 class TwitterFormatterTab: public virtual TwitterFormatter
 {
 private:
+    std::string sep = ":: ";
+    std::string removeReturn( std::string str );
     void printStatus( TwitterStatus status );
     void printUser( TwitterUser user );
 public:

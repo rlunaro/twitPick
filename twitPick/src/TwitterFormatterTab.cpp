@@ -41,25 +41,40 @@ void TwitterFormatterTab::print( std::string value )
     }
 }
 
+std::string TwitterFormatterTab::removeReturn( std::string str )
+{
+    std::string out = "";
+
+    for( std::string::iterator itPos = str.begin(); itPos != str.end(); ++itPos )
+    {
+        if( *itPos != '\n'
+         && *itPos != '\r' )
+            out.push_back( *itPos );
+    } // for
+
+    return out;
+}
+
+
 void TwitterFormatterTab::printStatus( TwitterStatus status )
 {
-    std::cout << "id: " << status.id << std::endl;
-    std::cout << "created: " << status.createdAt << std::endl;
-    std::cout << "text: " << status.text << std::endl;
-    std::cout << "source: " << status.source << std::endl;
-    std::cout << "retweets: " << status.retweetCount << std::endl;
-    std::cout << "lang: " << status.lang << std::endl;
+    std::cout << "id" << sep << status.id << std::endl;
+    std::cout << "created" << sep << status.createdAt << std::endl;
+    std::cout << "text" << sep << removeReturn( status.text ) << std::endl;
+    std::cout << "source" << sep << status.source << std::endl;
+    std::cout << "retweets" << sep << status.retweetCount << std::endl;
+    std::cout << "lang" << sep << status.lang << std::endl;
     printUser( status.user );
     return;
 }
 
 void TwitterFormatterTab::printUser( TwitterUser user )
 {
-    std::cout << "user.id: " << user.id << std::endl;
-    std::cout << "user.name: " << user.name << std::endl;
-    std::cout << "user.screenName: " << user.screenName << std::endl;
-    std::cout << "user.followers: " << user.followersCount << std::endl;
-    std::cout << "user.lang: " << user.lang << std::endl;
+    std::cout << "user.id" << sep << user.id << std::endl;
+    std::cout << "user.name" << sep << user.name << std::endl;
+    std::cout << "user.screenName" << sep << user.screenName << std::endl;
+    std::cout << "user.followers" << sep << user.followersCount << std::endl;
+    std::cout << "user.lang" << sep << user.lang << std::endl;
     return;
 }
 

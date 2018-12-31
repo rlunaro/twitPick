@@ -51,13 +51,7 @@ TwitterStatus TwitterParser::parseSingleStatus( nlohmann::json statusLine )
     TwitterStatus status;
     status.createdAt = statusLine["created_at"];
     status.id = statusLine["id_str"];
-    status.text = statusLine["text"];
-    if( statusLine["truncated"] == "true"
-    && statusLine["retweeted_status"].is_string() )
-    {
-        nlohmann::json retweeted_status = statusLine["retweeted_status"];
-        status.text = retweeted_status["text"];
-    }
+    status.text = statusLine["full_text"];
     status.source = statusLine["source"];
     status.retweetCount = statusLine["retweet_count"];
     status.lang = statusLine["lang"];

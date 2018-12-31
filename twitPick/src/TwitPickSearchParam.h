@@ -56,6 +56,8 @@ struct TwitPickSearchParam
 	std::string sinceId;
 	std::string maxId;
 	bool includeEntities;
+	// https://stackoverflow.com/questions/38717816/twitter-api-text-field-value-is-truncated
+	std::string tweetMode;
 
 	TwitPickSearchParam();
 	TwitPickSearchParam( const std::string& query );
