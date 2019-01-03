@@ -12,7 +12,8 @@ for tweets using a command line tool.
 Usage: 
 
 ```
-
+$ # remember to install libcurl the first time you use it: 
+$ #  sudo apt-get install libcurl4
 $ twitPick \
          --credentials-file "credentials.txt" \
          --cookies-file "cookies2.txt" \
