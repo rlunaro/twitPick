@@ -8,7 +8,7 @@ else
    param="$1"
 fi
 
-./Debug/twitPick \
+./Release/twitPick \
          --credentials-file "credentials.txt" \
          --cookies-file "cookies2.txt" \
          --output-format tabular \
