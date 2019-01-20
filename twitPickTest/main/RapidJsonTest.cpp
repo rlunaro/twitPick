@@ -22,7 +22,7 @@
  *      Author: rluna
  */
 
-
+#include "json.hpp"
 #include "catch.hpp"
 #include <string>
 #include <json.hpp>
